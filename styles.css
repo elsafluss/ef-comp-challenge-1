@@ -1,0 +1,16 @@
+/* --onyx: #2f3537ff; */
+/* --alabaster: #e0dfd5ff; */
+/* --mountbatten-pink: #a27e8eff; */
+/* --viridian: #3f826dff; */
+
+body {
+    background-color: #2f3537ff;
+    background-size: 100%;
+}
+
+img {
+    max-width: 50px;
+    background-color: #e0dfd5ff;
+    border-radius: 25%;
+    padding: 1em;
+}
