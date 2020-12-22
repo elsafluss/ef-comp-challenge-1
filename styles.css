@@ -3,14 +3,58 @@
 /* --mountbatten-pink: #a27e8eff; */
 /* --viridian: #3f826dff; */
 
-body {
+header {
+    border: 1px solid gold;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background-color: #2f3537ff;
     background-size: 100%;
 }
 
-img {
-    max-width: 50px;
+.nav {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    width: 30em;
+}
+
+body {
     background-color: #e0dfd5ff;
+}
+
+.logo {
+    background-color: #e0dfd5ff;
+    max-width: 50px;
     border-radius: 25%;
     padding: 1em;
+    margin: 1em;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    border: 1px solid blue
+}
+
+/* .card1 {
+  
+}
+
+.card2 {
+
+}
+
+.card3 {
+
+}
+
+.card4 {
+
+} */
