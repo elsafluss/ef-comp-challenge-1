@@ -3,27 +3,28 @@
 /* --mountbatten-pink: #a27e8eff; */
 /* --viridian: #3f826dff; */
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
-    border: 1px solid gold;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     background-color: #2f3537ff;
     background-size: 100%;
+    margin: auto;
+    width: 100%;
+    color:#e0dfd5ff;
 }
 
 .nav {
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
     list-style: none;
     width: 30em;
-}
-
-body {
-    background-color: #e0dfd5ff;
 }
 
 .logo {
@@ -34,27 +35,141 @@ body {
     margin: 1em;
 }
 
+body {
+    width: 70%;
+    background-color: #e0dfd5ff;
+    margin: auto;
+}
+
 .card-container {
+    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 1.1em;
+    margin: auto;
+    justify-content: center;
 }
 
 .card {
-    border: 1px solid blue
+    border: 1px solid #2f3537ff;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #2f3537ff;
+    position: relative;
 }
 
-/* .card1 {
-  
+.card-views,
+.card-views-count {
+    font-weight: 700;
+    z-index: -1;
+    position: absolute;
+    right: 1em;
+    top: 0;
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff;
 }
 
-.card2 {
-
+.card-views-count {
+    top: 1em;
 }
 
-.card3 {
-
+.animal-picture {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    z-index: -1;
 }
 
-.card4 {
+.animal-icon {
+    width: 35px;
+    height: auto;
+    background-color: #a27e8eff;
+    border-radius: 25%;
+    padding: .3em;
+    border: 1px solid #e0dfd5ff;
+    margin: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #2f3537ff;
+}
 
-} */
+.card-body {
+    position: relative;
+    top: 7.5em;
+    height: 450px;
+}
+
+.card-name {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: .5em;
+}
+
+.card-date {
+    font-weight: 300;
+    font-size: 80%;
+    margin-top: 0;
+    margin-left: .7em;
+}
+
+.card-link {
+    /* border: 1px solid blue; */
+    font-weight: 700;
+    color: #a27e8eff;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
+
+.card-breed,
+.card-traits {
+    font-weight: 400;
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+.card-find-more {
+    font-weight: 700;
+    color: #3f826dff;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
+
+.card-more-pics {
+    font-weight: 700;
+    z-index: -1;
+    position: absolute;
+    right: 1em;
+    top: 10em;
+}
+
+@media only screen and (max-width: 1810px) {
+    .card-container {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-gap: 1.1em;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1355px) {
+    .card-container {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-gap: 1.1em;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card-container {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-gap: 1.1em;
+        margin: auto;
+        justify-content: center;
+    }
+}
