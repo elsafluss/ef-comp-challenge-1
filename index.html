@@ -1,36 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2Win!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Yourtown Animal Shelter</title>
 </head>
+
 <body>
+    <img src="./assets/header-image.jpg" alt="a hand reaching through bars to skritch a puppy" class="header-image">
     <header>
-        <p>Admin Username</p>
-        <nav>Shares Playlists Personal Videos</nav>
-        <img src="" alt="logo">
+        <div class="header-right">
+            <p class="login">Login</p>
+            <div class="logo-area">
+                <p class="logo-name">Yourtown<br>Animal<br>Shelter</p>
+                <img src="./assets/logo.svg" alt="animal shelter logo" class="logo">
+            </div>
+        </div>
+        <ul class="nav">
+            <li>Adoptable Animals</li>
+            <li>Volunteer</li>
+            <li>Donate</li>
+        </ul>
+        <div class="small-nav">
+            <img src="./assets/menu-icon.svg" alt="menu icon">
+        </div>
     </header>
     <main>
-        <h1>Shares</h1>
-        <section class="grid-container">
-            <article class="card">
+        <h1>Adopt a pet today!</h1>
+        <section class="card-container">
+            <article class="card card1">
                 <div class="card-head">
-                    <button class="reply">arrow</button>
+                    <img src="./assets/cat1.jpg" alt="tabby kitten" class="animal-picture">
+                    <img src="./assets/cat-icon.svg" alt="this is a cat" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">03</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Malcom Reynolds</h3>
+                    <h4 class="card-date">Here since 04/20/20</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: orange stripey climber</h4>
+                    <h4 class="card-traits">Traits: cocky but a good leader</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">01</h2>
+                </div>
+            </article>
+            <article class="card card2">
+                <div class="card-head">
+                    <img src="./assets/dog1.jpg" alt="brown and white puppy" class="animal-picture">
+                    <img src="./assets/dog-icon.svg" alt="this is a dog" class="animal-icon">
                     <p class="card-views">Views</p>
                     <h2 class="card-views-count">02</h2>
                 </div>
                 <div class="card-body">
-                    <h3 class="card-name">Recipient's Namehere</h2>
-                    <h4 class="card-date">Monday 01/23/16 10:22am</h3>
-                    <p class="card-link">http://2win.2winstage.com/p/recipients_namehere</p>
-                    <h4 class="card-playlist">Playlist</h3>
-                    <h3 class="card-playlistname">Name of Playlist</h2>
-                    <h4 class="card-attachments">ATTACHMENTS</h3>
-                    <h2 class="card-number">04</h2>
+                    <h3 class="card-name">Hoban Washburne</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: white and brown smol</h4>
+                    <h4 class="card-traits">Traits: loyal to a fault</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">04</h2>
+                </div>
+            </article>
+            <article class="card card3">
+                <div class="card-head">
+                    <img src="./assets/cat2.jpg" alt="orange and white kitten" class="animal-picture">
+                    <img src="./assets/cat-icon.svg" alt="this is a cat" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">04</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Kaylee Frye</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: white, orange, excited</h4>
+                    <h4 class="card-traits">Traits: good with engines</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">03</h2>
+                </div>
+            </article>
+            <article class="card card4">
+                <div class="card-head">
+                    <img src="./assets/rabbit1.jpg" alt="seal point rabbit" class="animal-picture">
+                    <img src="./assets/rabbit-icon.svg" alt="this is a rabbit" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">06</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Inara Sera</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: seal point fluffy girl</h4>
+                    <h4 class="card-traits">Traits: sophisticated and deadly</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">03</h2>
+                </div>
+            </article>
+            <article class="card card5">
+                <div class="card-head">
+                    <img src="./assets/dog2.jpg" alt="black and white puppy" class="animal-picture">
+                    <img src="./assets/dog-icon.svg" alt="this is a dog" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">04</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Simon Tam</h3>
+                    <h4 class="card-date">Monday 04/23/16 10:22am</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: best tuxedo boi</h4>
+                    <h4 class="card-traits">Traits: pretty good doctor</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">03</h2>
+                </div>
+            </article>
+            <article class="card card6">
+                <div class="card-head">
+                    <img src="./assets/rabbit2.jpg" alt="black rabbit with blue eyes" class="animal-picture">
+                    <img src="./assets/rabbit-icon.svg" alt="this is a rabbit" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">01</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Zoe Washburne</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: can see into your soul</h4>
+                    <h4 class="card-traits">Traits: still loves you though</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">04</h2>
+                </div>
+            </article>
+            <article class="card card7">
+                <div class="card-head">
+                    <img src="./assets/dog3.jpg" alt="white lab puppy" class="animal-picture">
+                    <img src="./assets/dog-icon.svg" alt="this is a dog" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">01</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Jayne Cobb</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: honorable, dumb as rocks</h4>
+                    <h4 class="card-traits">Traits: hero of Canton</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">06</h2>
+                </div>
+            </article>
+            <article class="card card8">
+                <div class="card-head">
+                    <img src="./assets/cat3.jpg" alt="gray scottish fold kitten" class="animal-picture">
+                    <img src="./assets/cat-icon.svg" alt="this is a cat" class="animal-icon">
+                    <p class="card-views">Views</p>
+                    <h2 class="card-views-count">06</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">River Tam</h3>
+                    <h4 class="card-date">Here since 04/23/16</h4>
+                    <p class="card-link">Click here to adopt me!</p>
+                    <h4 class="card-breed">Breed: disaster</h4>
+                    <h4 class="card-traits">Traits: can kill you with her brain</h4>
+                    <h4 class="card-find-more">Find other animals like me!</h4>
+                    <h2 class="card-more-pics">03</h2>
                 </div>
             </article>
         </section>
     </main>
 </body>
+
 </html>
