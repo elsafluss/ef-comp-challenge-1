@@ -1,10 +1,33 @@
-/* --onyx: #2f3537ff; */
-/* --alabaster: #e0dfd5ff; */
-/* --mountbatten-pink: #a27e8eff; */
-/* --viridian: #3f826dff; */
+/* Normalize.css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
 
 body {
-    /* border: 1px solid red; */
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+}
+
+/* page styling */
+body {
     width: 1250px;
     background-color: #e0dfd5ff;
     margin: auto;
@@ -13,6 +36,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
 }
+
+/* on click, transform the clickable things */
 
 header {
     height: 500px;
@@ -124,7 +149,7 @@ header {
     display: none;
 }
 
-main h1 {
+h1 {
     color: #2f3537ff
 }
 
@@ -229,7 +254,7 @@ main h1 {
     top: 10em;
 }
 
-/* ^^extra large - 4 cards across */
+/* ^^extra large^^ - 4 cards across */
 
 /* large - 3 cards across */
 @media only screen and (max-width: 1810px) {
@@ -289,6 +314,10 @@ main h1 {
         font-size: small;
     }
 
+    h1 {
+        text-align: center;
+    }
+
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 300px);
@@ -316,13 +345,13 @@ main h1 {
     body,
     header,
     .header-image {
-            width: 302px;
+        width: 302px;
     }
 
     header {
         height: 100px;
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
     }
 
     .header-image {
@@ -356,7 +385,6 @@ main h1 {
     }
 
     .small-nav img {
-        /* display: inline-block; */
         margin: 1em;
         justify-content: flex-end;
     }
