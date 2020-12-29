@@ -1,0 +1,391 @@
+/* Normalize.css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+a {
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+}
+
+/* page styling */
+body {
+    width: 1250px;
+    background-color: #e0dfd5ff;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* on click, transform the clickable things */
+
+header {
+    height: 500px;
+    margin: auto;
+    width: 1250px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.header-image {
+    height: auto;
+    width: 1250px;
+    z-index: -1;
+    margin: auto;
+    position: absolute;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 40em;
+    max-width: 70%;
+}
+
+.nav li {
+    background-color: #e0dfd5ff;
+    list-style: none;
+    font-weight: 700;
+    font-size: x-large;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.small-nav {
+    display: none;
+}
+
+.small-nav img {
+    background: #e0dfd5ff;
+    max-width: 35px;
+    height: auto;
+    border-radius: 25%;
+    padding: 1em;
+    margin-left: 3em;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login {
+    border: 2px solid #e0dfd5ff;
+    text-align: center;
+    cursor: pointer;
+    color: #e0dfd5ff;
+    background-color: #2f3537ff;
+    width: 7em;
+    border-radius: 20px;
+    align-self: flex-end;
+    margin-right: 1em
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #e0dfd5ff;
+    background-color: #2f3537ff;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    border: 2px solid #e0dfd5ff;
+}
+
+.logo-name {
+    font-weight: 700;
+    text-align: right;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.logo {
+    background-color: #e0dfd5ff;
+    max-width: 70px;
+    border-radius: 25%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.title-large {
+
+    grid-row: 2;
+}
+
+.logo-title-small {
+    grid-row: 2;
+    display: none;
+}
+
+h1 {
+    color: #2f3537ff
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 1em;
+    margin: auto;
+    justify-content: center;
+    grid-row: 3;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #2f3537ff;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #2f3537ff;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card-views,
+.card-views-count {
+    font-weight: 700;
+    z-index: -1;
+    position: absolute;
+    right: 1em;
+    top: 0;
+    text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff;
+}
+
+.card-views-count {
+    top: 1em;
+}
+
+.animal-picture {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    z-index: -1;
+}
+
+.animal-icon {
+    width: 35px;
+    height: auto;
+    background-color: #a27e8eff;
+    border-radius: 25%;
+    padding: .3em;
+    border: 1px solid #e0dfd5ff;
+    margin: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #2f3537ff;
+}
+
+.card-body {
+    position: relative;
+    top: 7.5em;
+    height: 450px;
+}
+
+.card-name {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: .5em;
+}
+
+.card-date {
+    font-weight: 300;
+    font-size: 80%;
+    margin-top: 0;
+    margin-left: .7em;
+}
+
+.card-link {
+    font-weight: 700;
+    color: #a27e8eff;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
+
+.card-breed,
+.card-traits {
+    font-weight: 400;
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+.card-find-more {
+    font-weight: 700;
+    color: #3f826dff;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
+
+.card-more-pics {
+    font-weight: 700;
+    z-index: -1;
+    position: absolute;
+    right: 1em;
+    top: 10em;
+}
+
+/* ^^extra large^^ - 4 cards across */
+
+/* large - 3 cards across */
+@media only screen and (max-width: 1810px) {
+
+    body,
+    .header-image {
+        width: 933px;
+        height: auto;
+    }
+
+    header {
+        width: 933px;
+        height: 375px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-gap: 1em;
+        margin: auto;
+        justify-content: center;
+        grid-row: 3;
+    }
+
+    .small-nav {
+        display: none;
+    }
+
+    .title-large {
+        grid-row: 2;
+    }
+}
+
+/* medium - 2 cards across */
+@media only screen and (max-width: 1355px) {
+
+    body,
+    header,
+    .header-image {
+        width: 623px;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    .header-right {
+        height: 250px;
+    }
+
+    .logo-area {
+        width: 200px;
+        height: 100px;
+    }
+
+    .logo-name {
+        font-size: small;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-gap: 1.1em;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+    }
+
+    .small-nav img {
+        margin-top: 10em;
+    }
+}
+
+/* smallest - 1 card wide*/
+@media only screen and (max-width: 900px) {
+
+    body,
+    header,
+    .header-image {
+        width: 302px;
+    }
+
+    header {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-gap: 1.1em;
+        margin: auto;
+        justify-content: center;
+        grid-row: 3;
+    }
+
+    .title-large {
+        display: none;
+    }
+
+    .logo-title-small {
+        display: flex;
+        text-align: center;
+        grid-row: 2;
+    }
+
+    .logo-area,
+    .nav,
+    .login {
+        display: none;
+    }
+
+    .small-nav img {
+        margin: 1em;
+        justify-content: flex-end;
+    }
+}
