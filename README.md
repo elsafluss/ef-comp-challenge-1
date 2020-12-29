@@ -5,21 +5,24 @@ For this assignment, we were asked to recreate the layout of a static image of a
 
 The original comp:
 
+![Original comp](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/static-comp-challenge-2.jpg?raw=true)
+
+---
 
 The final page, in four layouts:
 
-Four cards across
+## Four cards across / Largest screen size
 
 ![Largest screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/four%20cards.png?raw=true)
 
-Three cards across
+## Three cards across / Medium screen size
 
 ![Medium screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/three%20cards.png?raw=true)
 
-Two cards across
+## Two cards across / Small screen size
 
 ![Small screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/two%20cards.png?raw=true)
 
-One card
+## One card / Mobile screen size
 
 ![Mobile screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/one%20card.png?raw=true)
