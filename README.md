@@ -30,8 +30,8 @@ The final page, in four layouts:
 
 #### Sources
 
-Images were downloaded from (pexels.com)
+Images were downloaded from ![pexels.com](https://www.pexels.com/)
 
-Icons were downloaded from (thenounproject.com)
+Icons were downloaded from ![thenounproject.com](https://thenounproject.com/)
 
-Font is Poppins from (fonts.googleapis.com)
+Font is Poppins from ![fonts.google.com](https://fonts.google.com/specimen/Poppins?query=popp)
