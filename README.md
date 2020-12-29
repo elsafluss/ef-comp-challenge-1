@@ -9,13 +9,17 @@ The original comp:
 The final page, in four layouts:
 
 Four cards across
+
 ![Largest screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/four%20cards.png?raw=true)
 
 Three cards across
+
 ![Medium screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/three%20cards.png?raw=true)
 
 Two cards across
+
 ![Small screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/two%20cards.png?raw=true)
 
 One card
+
 ![Mobile screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/one%20card.png?raw=true)
