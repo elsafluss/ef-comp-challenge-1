@@ -26,3 +26,12 @@ The final page, in four layouts:
 ## One card / Mobile screen size
 
 ![Mobile screen size](https://github.com/elsafluss/ef-comp-challenge-1/blob/main/readme-assets/one%20card.png?raw=true)
+
+
+#### Sources
+
+Images were downloaded from (pexels.com)
+
+Icons were downloaded from (thenounproject.com)
+
+Font is Poppins from (fonts.googleapis.com)
