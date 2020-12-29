@@ -27,55 +27,65 @@ img {
 }
 
 /* page styling */
-body {
-    width: 1250px;
-    background-color: #e0dfd5ff;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
+:root {
+    --light: #e0dfd5ff;
+    --dark: #2f3537ff;
+    --accent-one: #3f826dff;
+    --accent-two: #a27e8eff;
 }
 
-/* on click, transform the clickable things */
-
-header {
-    height: 500px;
+body {
+    background-color: var(--light);
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
     width: 1250px;
+}
+
+.on-click:active,
+li:active {
+    transform: scale(.97);
+}
+
+header {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     grid-column: 1/4;
     grid-row: 1;
+    height: 500px;
+    justify-content: space-between;
+    margin: auto;
+    width: 1250px;
 }
 
 .header-image {
     height: auto;
-    width: 1250px;
-    z-index: -1;
     margin: auto;
     position: absolute;
+    width: 1250px;
+    z-index: -1;
 }
 
 .nav {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-between;
-    width: 40em;
     max-width: 70%;
+    width: 40em;
 }
 
 .nav li {
-    background-color: #e0dfd5ff;
-    list-style: none;
+    background-color: var(--light);
+    border-radius: 5px;
+    cursor: pointer;
     font-weight: 700;
     font-size: x-large;
-    text-transform: uppercase;
-    cursor: pointer;
+    list-style: none;
     padding: .5em;
-    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .small-nav {
@@ -83,102 +93,105 @@ header {
 }
 
 .small-nav img {
-    background: #e0dfd5ff;
-    max-width: 35px;
-    height: auto;
+    background: var(--light);
     border-radius: 25%;
-    padding: 1em;
+    cursor: pointer;
+    height: auto;
     margin-left: 3em;
     margin-top: 3em;
-    cursor: pointer;
+    max-width: 35px;
+    padding: 1em;
 }
 
 .header-right {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .login {
-    border: 2px solid #e0dfd5ff;
-    text-align: center;
-    cursor: pointer;
-    color: #e0dfd5ff;
-    background-color: #2f3537ff;
-    width: 7em;
-    border-radius: 20px;
     align-self: flex-end;
-    margin-right: 1em
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    border-radius: 20px;
+    color: var(--light);
+    cursor: pointer;
+    margin-right: 1em;
+    padding: 2px;
+    text-align: center;
+    width: 7em;
 }
 
 .logo-area {
+    align-items: center;
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    border-radius: 5px;
+    color: var(--light);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    color: #e0dfd5ff;
-    background-color: #2f3537ff;
-    padding: 1em;
     margin: 1em;
-    border-radius: 5px;
-    border: 2px solid #e0dfd5ff;
+    padding: 1em;
 }
 
 .logo-name {
+    font-size: larger;
     font-weight: 700;
     text-align: right;
-    font-size: larger;
     text-transform: uppercase;
 }
 
 .logo {
-    background-color: #e0dfd5ff;
-    max-width: 70px;
+    background-color: var(--light);
     border-radius: 25%;
-    padding: 1em;
     margin: 1em;
+    max-width: 70px;
+    padding: 1em;
 }
 
 .title-large {
-
     grid-row: 2;
+    align-self: center;
 }
 
 .logo-title-small {
-    grid-row: 2;
     display: none;
+    grid-row: 2;
+    margin-top: 1em;
 }
 
 h1 {
-    color: #2f3537ff
+    color: var(--dark);
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
     grid-gap: 1em;
-    margin: auto;
-    justify-content: center;
     grid-row: 3;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 3em;
     width: 100%;
 }
 
 .card {
-    border: 1px solid #2f3537ff;
-    width: 100%;
-    box-shadow: 0 4px 8px 0 #2f3537ff;
-    position: relative;
+    border: 1px solid var(--dark);
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 var(--dark);
+    position: relative;
+    width: 100%;
 }
 
 .card-views,
 .card-views-count {
     font-weight: 700;
-    z-index: -1;
     position: absolute;
     right: 1em;
-    top: 0;
     text-shadow: 0 0 2px #ffffff, 0 0 3px #ffffff;
+    top: 0;
+    z-index: -1;
 }
 
 .card-views-count {
@@ -186,97 +199,96 @@ h1 {
 }
 
 .animal-picture {
-    width: 300px;
     height: 220px;
     position: absolute;
+    width: 300px;
     z-index: -1;
 }
 
 .animal-icon {
-    width: 35px;
-    height: auto;
-    background-color: #a27e8eff;
+    background-color: var(--accent-two);
+    border: 1px solid var(--light);
     border-radius: 25%;
-    padding: .3em;
-    border: 1px solid #e0dfd5ff;
-    margin: 1em;
+    box-shadow: 2px 2px 4px var(--dark);
     cursor: pointer;
-    box-shadow: 2px 2px 4px #2f3537ff;
+    height: auto;
+    margin: 1em;
+    padding: .3em;
+    width: 35px;
+}
+
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body p {
+    margin-left: 1em;
 }
 
 .card-body {
+    height: 260px;
     position: relative;
-    top: 7.5em;
-    height: 450px;
 }
 
 .card-name {
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 0;
-    margin-left: .5em;
+    margin-top: 8em;
+    text-transform: uppercase;
 }
 
 .card-date {
-    font-weight: 300;
-    font-size: 80%;
-    margin-top: 0;
-    margin-left: .7em;
+    font-weight: 400;
+    margin-top: .5em;
 }
 
 .card-link {
-    font-weight: 700;
-    color: #a27e8eff;
+    color: var(--accent-two);
     cursor: pointer;
-    width: 90%;
-    text-align: center;
+    font-weight: 700;
 }
 
 .card-breed,
 .card-traits {
     font-weight: 400;
-    margin-left: 1em;
-    margin-right: .5em;
+    margin: 0;
 }
 
 .card-find-more {
-    font-weight: 700;
-    color: #3f826dff;
+    color: var(--accent-one);
     cursor: pointer;
+    font-weight: 700;
     width: 90%;
-    text-align: center;
 }
 
 .card-more-pics {
     font-weight: 700;
-    z-index: -1;
+    margin-top: 0;
     position: absolute;
     right: 1em;
-    top: 10em;
+    top: 9em;
 }
-
-/* ^^extra large^^ - 4 cards across */
 
 /* large - 3 cards across */
 @media only screen and (max-width: 1810px) {
 
     body,
     .header-image {
-        width: 933px;
         height: auto;
+        width: 933px;
     }
 
     header {
-        width: 933px;
         height: 375px;
+        width: 933px;
     }
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(3, 300px);
         grid-gap: 1em;
-        margin: auto;
-        justify-content: center;
         grid-row: 3;
+        grid-template-columns: repeat(3, 300px);
+        justify-content: center;
+        margin: auto;
     }
 
     .small-nav {
@@ -297,21 +309,22 @@ h1 {
         width: 623px;
     }
 
-    header {
-        height: 250px;
-    }
-
+    header,
     .header-right {
         height: 250px;
     }
 
     .logo-area {
-        width: 200px;
         height: 100px;
+        width: 200px;
     }
 
     .logo-name {
-        font-size: small;
+        font-size: medium;
+    }
+
+    .logo {
+        margin-left: .5em;
     }
 
     h1 {
@@ -320,10 +333,10 @@ h1 {
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(2, 300px);
         grid-gap: 1.1em;
-        margin: auto;
+        grid-template-columns: repeat(2, 300px);
         justify-content: center;
+        margin: auto;
     }
 
     .nav {
@@ -361,11 +374,11 @@ h1 {
 
     .card-container {
         display: grid;
-        grid-template-columns: 300px;
         grid-gap: 1.1em;
-        margin: auto;
-        justify-content: center;
         grid-row: 3;
+        grid-template-columns: 300px;
+        justify-content: center;
+        margin: auto;
     }
 
     .title-large {
@@ -374,8 +387,8 @@ h1 {
 
     .logo-title-small {
         display: flex;
-        text-align: center;
         grid-row: 2;
+        text-align: center;
     }
 
     .logo-area,
@@ -385,7 +398,7 @@ h1 {
     }
 
     .small-nav img {
-        margin: 1em;
         justify-content: flex-end;
+        margin: 1em;
     }
 }
