@@ -1,5 +1,5 @@
 
-# Static Comp Challenge 1
+# Static Comp Recreation 
 
 For this assignment, we were asked to recreate the layout of a static image of a web page, using our own creativity and discretion when it came to everything other than item placement. The final page had to be responsive over multiple breakpoints, useful, and intuitive. [Here are the instructions we were given.](https://frontend.turing.io/projects/module-1/m1-static-comp)
 
